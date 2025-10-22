@@ -1,0 +1,33 @@
+# Node
+node_modules/
+
+# Env files
+**/.env
+**/.env.*
+
+# Uploads
+back-end/uploads/
+
+# Frontend build
+front-end/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# lock files (optional keep)
+# package-lock.json
+# yarn.lock

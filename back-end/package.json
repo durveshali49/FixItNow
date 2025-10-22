@@ -1,0 +1,35 @@
+{
+  "name": "complaint-portal-backend",
+  "version": "1.0.0",
+  "description": "Backend for Online Complaint and Grievance Portal",
+  "main": "Server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node Server.js",
+    "dev": "nodemon Server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "axios": "^1.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.15.1",
+    "node-cron": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [
+    "complaint",
+    "grievance",
+    "portal",
+    "feedback",
+    "management"
+  ],
+  "author": "Harshita Gupta",
+  "license": "MIT"
+}
