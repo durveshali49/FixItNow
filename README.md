@@ -1,6 +1,6 @@
 
 # FixItNow
-=======
+
 ## 📋 Project Overview
 
 Lightweight web application to submit, track and manage complaints with an admin dashboard, auto-escalation rules and simple reporting/export.
