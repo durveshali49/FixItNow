@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # FixItNow
 =======
 ## 📋 Project Overview
