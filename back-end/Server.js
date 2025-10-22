@@ -19,7 +19,7 @@ const pool = mysql.createPool({
   port: parseInt(process.env.DB_PORT, 10) || 3306,
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "complaint_system",
+  database: process.env.DB_NAME || "FixItNow",
   waitForConnections: true,
   connectionLimit: parseInt(process.env.DB_CONNECTION_LIMIT, 10) || 10,
   queueLimit: 0,

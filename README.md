@@ -34,8 +34,8 @@ If you'd like, I can continue improving accessibility, add automated tests, or w
 Create the database and tables (example SQL):
 
 ```sql
-CREATE DATABASE complaint_system;
-USE complaint_system;
+CREATE DATABASE FixItNow;
+USE FixItNow;
 
 -- Users
 CREATE TABLE users (
@@ -106,7 +106,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=your_db_password
-DB_NAME=complaint_system
+DB_NAME=FixItNow
 JWT_SECRET=change_this_secret
 ```
 
@@ -266,8 +266,8 @@ resolveit-portal/
 
 1. **Create the MySQL database:**
 ```sql
-CREATE DATABASE complaint_system;
-USE complaint_system;
+CREATE DATABASE FixItNow;
+USE FixItNow;
 ```
 
 2. **Create the required tables:**
@@ -362,7 +362,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=your_db_user
 DB_PASSWORD=your_db_password
-DB_NAME=complaint_system
+DB_NAME=FixItNow
 JWT_SECRET=your_secret_key_here
 ```
 
