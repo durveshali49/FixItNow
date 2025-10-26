@@ -1,0 +1,107 @@
+/* src/ImageUploader.css */
+.image-uploader {
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--input-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.image-uploader:hover {
+    border-color: var(--primary-color);
+    background-color: var(--card-bg);
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(182, 174, 159, 0.2);
+}
+
+.upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.image-uploader:hover .upload-placeholder {
+    color: var(--text-primary);
+}
+
+.upload-placeholder svg {
+    transition: color 0.3s ease;
+}
+
+.image-uploader:hover .upload-placeholder svg {
+    color: var(--primary-color);
+}
+
+.upload-placeholder small {
+    font-size: 0.8rem;
+}
+
+/* Container for preview image and its overlay */
+.preview-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.3s ease;
+}
+
+/* NEW: Overlay for changing the image */
+.preview-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 38, 33, 0.85);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.preview-container:hover .image-preview {
+    filter: blur(2px) brightness(0.7);
+}
+
+.preview-container:hover .preview-overlay {
+    opacity: 1;
+}
+
+/* Consistent Loader Style */
+.loader.small {
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--border-color);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

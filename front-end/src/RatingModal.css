@@ -1,0 +1,101 @@
+/* RatingModal.css */
+
+/* --- Modal Container --- */
+.modal-content.rating-modal {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    animation: scaleIn 0.3s ease-out; /* Added animation */
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.rating-modal .modal-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.rating-modal .close-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.rating-modal .close-btn:hover {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+}
+
+/* --- Modal Body & Content --- */
+.rating-modal .rating-body {
+    padding: 1rem 0;
+    color: var(--text-secondary);
+}
+
+.rating-modal .rating-body strong {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* --- Star Rating Input --- */
+.star-rating-input {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.star {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.star.empty {
+    color: var(--border-color);
+}
+
+.star.filled {
+    color: var(--warning-color);
+    fill: var(--warning-color);
+    filter: drop-shadow(0 0 8px rgba(243, 156, 18, 0.5));
+}
+
+.star:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 12px rgba(243, 156, 18, 0.7));
+}
+
+/* --- Text Area --- */
+.rating-modal .form-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    background: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    transition: all 0.2s ease;
+}
+
+.rating-modal .form-textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(197, 199, 188, 0.2);
+}

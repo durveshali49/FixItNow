@@ -1,0 +1,175 @@
+/* BookingModal.css */
+.modal-content.booking-modal {
+    max-width: 700px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.booking-modal .highlight {
+    color: var(--primary-color);
+}
+
+.booking-modal .close-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.booking-modal .close-btn:hover {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+}
+
+.booking-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.calendar-section h4, .slots-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem 0;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.week-navigator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.week-navigator span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.week-navigator button {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.week-navigator button:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-color);
+    background-color: var(--input-bg);
+}
+
+.week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.75rem;
+}
+
+.day-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 0.5rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+    font-family: inherit;
+}
+.day-btn .day-name { font-size: 0.8rem; color: var(--text-secondary); transition: color 0.2s ease; }
+.day-btn .day-number { font-size: 1.2rem; font-weight: 600; }
+
+.day-btn:hover:not(:disabled) {
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.day-btn.selected {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-color: var(--primary-color);
+    color: var(--dark-bg);
+    font-weight: 700;
+}
+.day-btn.selected .day-name { color: var(--dark-bg); opacity: 0.8; }
+
+.day-btn.past {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background: transparent;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.75rem;
+}
+
+.slot-btn {
+    padding: 0.75rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.slot-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.slot-btn.selected {
+    background: var(--accent-color);
+    border-color: var(--primary-color);
+    color: var(--dark-bg);
+    font-weight: 700;
+}
+
+.no-slots {
+    color: var(--text-secondary);
+    background: var(--input-bg);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    grid-column: 1 / -1; /* Make it span the full width */
+    border: 1px dashed var(--border-color);
+}
+
+.loader.small {
+    width: 24px;
+    height: 24px;
+    border: 3px solid var(--border-color);
+    border-top-color: var(--primary-color);
+    margin: 1rem auto;
+}
