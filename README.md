@@ -44,7 +44,7 @@ Includes smooth animations, glassmorphism effects, and responsive design for all
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** - UI framework
