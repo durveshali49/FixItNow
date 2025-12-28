@@ -6,7 +6,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 ### 👥 For Customers
 - **Browse Services**: Discover local service providers with advanced filtering
