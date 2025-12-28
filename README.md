@@ -32,7 +32,7 @@
 
 ---
 
-## 🎨 Design
+## Design
 
 FixItNow features a modern warm neutral color palette:
 - **Primary**: #B6AE9F (Warm Taupe)
