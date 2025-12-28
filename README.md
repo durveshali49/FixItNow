@@ -24,7 +24,7 @@
 - **Real-time Notifications**: Get notified of new bookings instantly
 - **Performance Analytics**: Track your ratings and customer feedback
 
-### 🔐 For Admins
+### For Admins
 - **User Management**: Approve and manage service providers
 - **Service Moderation**: Review and approve new services
 - **Dashboard Analytics**: Monitor platform statistics
