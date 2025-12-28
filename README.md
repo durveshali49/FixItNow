@@ -1,4 +1,4 @@
-# 🔧 FixItNow
+# FixItNow
 
 **FixItNow** is a modern platform for discovering, booking, and managing local services. Connect customers with trusted service providers in their area with ease.
 
