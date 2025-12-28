@@ -8,7 +8,7 @@
 
 ## Features
 
-### 👥 For Customers
+### For Customers
 - **Browse Services**: Discover local service providers with advanced filtering
 - **GPS Location**: Auto-detect your location to find nearby services
 - **Real-time Booking**: Check availability and book appointments instantly
