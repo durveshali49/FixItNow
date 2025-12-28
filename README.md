@@ -16,7 +16,7 @@
 - **Reviews & Ratings**: Read authentic reviews from verified customers
 - **Booking Management**: Track and manage all your bookings in one place
 
-### 🛠️ For Service Providers
+### For Service Providers
 - **Service Listing**: Add and manage your services with images
 - **Schedule Management**: Set your availability for each day of the week
 - **Booking Dashboard**: View and manage all incoming bookings
